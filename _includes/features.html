@@ -1,0 +1,18 @@
+<section id="three" class="wrapper {{ include.style }} special">
+        <div class="inner">
+            <header class="major">
+                <h2>{{ include.title }}</h2>
+                <p>{{ include.description }}</p>
+            </header>
+            <ul class="features">
+                {% for item in include.features %}
+                    <li>
+                            <i style="float:left; font-size:2em" class="icons {{ item.icon }}"></i>
+                            <h3 style="text-align:center">{{ item.title }}</h3>
+                            <p  style="text-align:center">{{ item.description }}</p>
+                    </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+    </section>
